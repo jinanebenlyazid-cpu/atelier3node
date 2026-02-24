@@ -24,7 +24,8 @@ const db = mysql.createConnection({
     host: 'mysql-jinane.alwaysdata.net',
     database: 'jinane_atelier3_nodejs',
     user: 'jinane',
-    password: 'BEN@2019'
+    password: 'BEN@2019',
+     connectionLimit: 10
 })
 
 db.connect(err => {
